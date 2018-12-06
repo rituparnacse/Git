@@ -1,13 +1,13 @@
 ---
 applications:
-- name: cloudnative
+- name: msworkbenchnew
   memory: 1024M
   instances: 1
-  path: target/cloudnative-0.0.1-SNAPSHOT.jar
+  path: target/msworkbenchnew-0.0.1-SNAPSHOT.jar
   services:
   - cloudapps-tool-registry
   - config-server
   routes:
-  - route: cloudnative-test.apps.pcf.dxc.com
+  - route: msworkbenchnew-test.apps.pcf.dxc.com
   env:
     SPRING_PROFILES_ACTIVE: pcf
