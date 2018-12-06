@@ -1,4 +1,4 @@
-package $packagename;
+package com.dxc.cna.msworkbenchnew.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
