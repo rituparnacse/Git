@@ -3,18 +3,18 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.dxc.cna.msworkbench</groupId>
-	<artifactId>msworkbench</artifactId>
+	<groupId>com.dxc.cna.demoStarterProject</groupId>
+	<artifactId>demoStarterProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>msworkbench</name>
-	<description>msworkbench</description>
+	<name>demoStarterProject</name>
+	<description>Demo Starter Project</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.4.0.RELEASE</version>
+		<version>1.6.0.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
