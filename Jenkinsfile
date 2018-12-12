@@ -19,13 +19,13 @@ node
       sh 'mvn clean install'
     }
     
-   stage('PCF Test Deploy Phase') {
-         pushToCloudFoundry cloudSpace: 'testing-dev', credentialsId: 'pivotal_prod_credentials',organization: 'cactus_testing', selfSigned: true,  pluginTimeout: 360, target: 'https://api.sys.pcf.dxc.com', manifestChoice: [manifestFile: 'manifest_test.yml']
-     } 
+   //stage('PCF Sandbox Deploy Phase') {
+        // pushToCloudFoundry cloudSpace: 'testapps', credentialsId: 'pivotal_credentials',organization: 'dxc-sb', selfSigned: true,  pluginTimeout: 360, target: 'api.sys.pcf-dojo-sandbox.dxc-pcf-sb.tk'
+     //}
    
-  /*stage('PCF Prod Deploy Phase') {	
+  stage('PCF Prod Deploy Phase') {	
 	      pushToCloudFoundry cloudSpace: 'prod', credentialsId: 'pivotal_prod_credentials',organization: 'cactus', selfSigned: false,  pluginTimeout: 360, target: 'https://api.sys.pcf.dxc.com', manifestChoice: [manifestFile: 'manifest_prod.yml']
-    }*/
+    }
    stage('Notify Phase') {
         notifyBuild('SUCCESS')
 	currentBuild.result = 'SUCCESS'
